@@ -36,7 +36,7 @@ Chutes and Ladders was run a million times and summary statistics were gathered 
 
 # Implementation
 
-The chutes and ladders were copied from our copy of the game. The game is modeled as a list of 100 squares which will conatain either `None` or a destination square's index. This skips the hashing step in using a dict and since the board is only 100 items it is easy to hold as a list. By assessing those destinations at the start of the turn instead of the end we avoid having to do a bounds check on the board array twice. Bookkeeping aside, the game is literally a 3-line `while` loop.
+The chutes and ladders were copied from our copy of the game. The game is modeled as a list of 100 squares which will contain either `None` or a destination square's index. This skips the hashing step in using a dict and since the board is only 100 items it is easy to hold as a list. By assessing those destinations at the start of the turn instead of the end we avoid having to do a bounds check on the board array twice. Bookkeeping aside, the game is literally a 3-line `while` loop.
 
 Summary statistics are calculated using a mix of the built-in `statistics` library and `numpy`. Histogram is calculated using `matplotlib`.
 
