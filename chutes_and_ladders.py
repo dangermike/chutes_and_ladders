@@ -45,7 +45,7 @@ for i in range(trials):
 results = sorted(results)
 
 percentile_bins = [0, 25, 50, 75, 99, 99.9, 100]
-percentiles = numpy.percentile(results, [0, 25, 50, 75, 99, 99.9, 100])
+percentiles = numpy.percentile(results, percentile_bins)
 
 stats = [
     ('count', trials),
